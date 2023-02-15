@@ -1,0 +1,9 @@
+/* app global css */
+@font-face {
+  font-family: one_trick_pony_ot;
+  src: url(./fonts/one_trick_pony_ot.otf);
+}
+
+.my-font {
+  font-family: one_trick_pony_ot;
+}

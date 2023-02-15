@@ -1,0 +1,40 @@
+{
+  "name": "eyuel-honey",
+  "version": "0.0.1",
+  "description": "A Honey shop",
+  "productName": "eyuel honey",
+  "author": "Eyuel-Nigussie <eyuthedev@gmail.com>",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue ./",
+    "format": "prettier --write \"**/*.{js,vue,css,html,md,json}\" --ignore-path .gitignore",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.0.0",
+    "pinia": "^2.0.30",
+    "quasar": "^2.6.0",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0"
+  },
+  "devDependencies": {
+    "@quasar/app-vite": "^1.0.0",
+    "@quasar/quasar-app-extension-testing-e2e-cypress": "^4.2.2",
+    "@vue/devtools": "^5.1.1",
+    "autoprefixer": "^10.4.13",
+    "electron": "^6.1.12",
+    "electron-packager": "^15.5.2",
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-vue": "^9.0.0",
+    "postcss": "^8.4.21",
+    "prettier": "^2.5.1",
+    "tailwindcss": "^3.2.6",
+    "eslint-plugin-cypress": "^2.11.3"
+  },
+  "engines": {
+    "node": "^18 || ^16 || ^14.19",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}
