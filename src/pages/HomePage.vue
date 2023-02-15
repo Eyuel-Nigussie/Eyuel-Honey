@@ -113,15 +113,12 @@
           img-src="https://www.shutterstock.com/image-vector/big-truck-honey-smiling-men-260nw-1150435877.jpg"
         />
       </q-carousel>
-      <div class="-mt-[50px]">
-        <q-btn
-          color="primary"
-          icon-left="hive"
-          label="Our Quality Products"
-          class="q-mt-md"
-          flat
-        />
-      </div>
+      <q-btn
+        color="primary"
+        label="Our Quality Products"
+        flat
+        class="mt-[5px]"
+      />
     </div>
   </q-page>
 </template>
