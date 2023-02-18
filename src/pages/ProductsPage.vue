@@ -36,7 +36,9 @@
             <q-btn flat round icon="event" />
             <q-btn flat> On Sale </q-btn>
             <q-btn flat> Featuring </q-btn>
-            <q-btn flat color="primary"> Discount </q-btn>
+            <q-btn to="/buy" flat color="primary"
+              >Buy Production <q-icon name="shopping_bag" class="q-pb-sm" />
+            </q-btn>
           </q-card-actions>
         </q-card>
       </div>
