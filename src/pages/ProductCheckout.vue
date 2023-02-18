@@ -10,7 +10,7 @@
           />
 
           <q-card-section>
-            Product: clug<br />
+            <span class="text-weight-bolder">Product: clug<br /></span>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
             porro illo cumque vitae voluptatum eius quas illum facere quibusdam
             necessitatibus! Quos quidem corporis, aut quia ut aperiam quaerat
@@ -75,7 +75,7 @@
         <q-option-group :options="options" type="radio" v-model="group" />
       </div>
 
-      <q-btn push color="primary" label="Push" class="q-m-md m-[8px]" />
+      <q-btn push color="primary" label="Buy" class="q-m-md m-[8px]" />
     </div>
   </qpage>
 </template>
