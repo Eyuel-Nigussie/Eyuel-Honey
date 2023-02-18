@@ -32,7 +32,7 @@
 
       <q-input
         filled
-        v-model="creditCard"
+        v-model="cardNumber"
         label="Your Credit Card Number *"
         hint="xxxx xxx xxxxx"
         lazy-rules
@@ -43,7 +43,7 @@
       <div class="row mx-1 space-x-4 no-wrap">
         <q-input
           filled
-          v-model="creditCard"
+          v-model="cvv"
           label="CVV*"
           hint="****"
           lazy-rules
@@ -52,7 +52,7 @@
         />
         <q-input
           filled
-          v-model="creditCard"
+          v-model="postalCode"
           label="Postal Code *"
           hint="Name and surname"
           lazy-rules
@@ -61,7 +61,7 @@
         />
         <q-input
           filled
-          v-model="creditCard"
+          v-model="holderName"
           label="Your Credit Card Number *"
           hint="Name and surname"
           lazy-rules
@@ -82,6 +82,13 @@
         label="Buy"
         class="q-m-md m-[8px]"
       />
+      <q-btn
+        @click="onReset()"
+        push
+        color="primary"
+        label="Reset"
+        class="q-m-md m-[8px]"
+      />
     </div>
   </qpage>
 </template>
@@ -95,15 +102,19 @@ export default {
     const $q = useQuasar();
 
     const name = ref(null);
+    const cardNumber = ref(null);
+    const cvv = ref(null);
+    const postalCode = ref(null);
+    const holderName = ref(null);
     const age = ref(null);
     const accept = ref(false);
     const creditCard = ref(null);
 
     return {
-      name,
-      age,
-      accept,
-      creditCard,
+      cardNumber,
+      cvv,
+      postalCode,
+      holderName,
       group: ref(null),
 
       onSubmit() {
@@ -130,11 +141,15 @@ export default {
         { label: "Pay Pal", value: "upload", color: "blue" },
       ],
 
-      // onReset() {
-      //   name.value = null;
-      //   age.value = null;
-      //   accept.value = false;
-      // },
+      onReset() {
+        name.value = null;
+        cardNumber.value = null;
+        cvv.value = null;
+        postalCode.value = null;
+        holderName.value = null;
+        age.value = null;
+        creditCard.value = null;
+      },
     };
   },
 };
