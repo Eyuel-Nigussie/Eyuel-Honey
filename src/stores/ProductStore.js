@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
 
-export const useProductStore = defineStore("counter", {
+export const useProductStore = defineStore("ProductStore", {
   state: () => ({
     products: [
       {
@@ -11,6 +11,8 @@ export const useProductStore = defineStore("counter", {
         price: "120 Birr",
         picture:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMAOcLLeWtkFibkpxP0tUcBNKZpYrIPqBepg&usqp=CAU  ",
+        likes: 0,
+        liked: false,
       },
       {
         id: 2,
@@ -20,6 +22,8 @@ export const useProductStore = defineStore("counter", {
         price: "120 Birr",
         picture:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqqowsymJrs-Y8uQDdMqJX9ev_4690rNvSdQ&usqp=CAU",
+        likes: 0,
+        liked: false,
       },
       {
         id: 3,
@@ -29,6 +33,8 @@ export const useProductStore = defineStore("counter", {
         price: "120 Birr",
         picture:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdac7g9C6fqZbL6FSGvSUmGn-cksUvYENkuzD2U8_aQmqMJS6doqHBa6v-YEVoDJvINKQ&usqp=CAU",
+        likes: 0,
+        liked: false,
       },
       {
         id: 4,
@@ -38,6 +44,8 @@ export const useProductStore = defineStore("counter", {
         price: "120 Birr",
         picture:
           "https://cdn.shopify.com/s/files/1/1363/9225/products/KBH_071619-2_1400x.jpg?v=1663803009",
+        likes: 0,
+        liked: false,
       },
       {
         id: 5,
@@ -47,6 +55,8 @@ export const useProductStore = defineStore("counter", {
         price: "120 Birr",
         picture:
           "https://cf.shopee.com.my/file/f738c797746a0b5b15b89d3987726b1b",
+        likes: 0,
+        liked: false,
       },
       {
         id: 6,
@@ -56,6 +66,8 @@ export const useProductStore = defineStore("counter", {
         price: "120 Birr",
         picture:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1o5pKFYqVLKmfV2AYyYqh5oMsNKt6ttEqnA&usqp=CAU",
+        likes: 0,
+        liked: false,
       },
     ],
   }),
@@ -67,8 +79,16 @@ export const useProductStore = defineStore("counter", {
   },
 
   actions: {
-    increment() {
-      this.counter++;
+    likes(id) {
+      const product = this.products.find((p) => p.id === id);
+
+      if (product.liked === false) {
+        product.likes++;
+        product.liked = true;
+      } else {
+        product.likes--;
+        product.liked = false;
+      }
     },
   },
 });

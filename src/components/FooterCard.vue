@@ -8,6 +8,7 @@
             class="h-8 mr-3"
             alt="FlowBite Logo"
           />
+          <a href="tel:+251944367283" class="text-black">Call Phone</a>
           <span
             class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
             >Flowbite</span
