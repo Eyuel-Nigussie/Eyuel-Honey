@@ -41,7 +41,7 @@
         <q-route-tab
           to="/products"
           name="/products"
-          icon="person_outline"
+          icon="hive"
           label=""
           class="q-pa-none lt-sm"
         />

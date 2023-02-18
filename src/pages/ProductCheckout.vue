@@ -75,7 +75,13 @@
         <q-option-group :options="options" type="radio" v-model="group" />
       </div>
 
-      <q-btn push color="primary" label="Buy" class="q-m-md m-[8px]" />
+      <q-btn
+        to="/confirm"
+        push
+        color="primary"
+        label="Buy"
+        class="q-m-md m-[8px]"
+      />
     </div>
   </qpage>
 </template>

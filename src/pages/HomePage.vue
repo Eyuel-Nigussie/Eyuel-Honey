@@ -39,6 +39,7 @@
 
       <div>
         <q-btn
+          to="/products"
           outline
           rounded
           color="primary"
@@ -123,6 +124,7 @@
         />
       </q-carousel>
       <q-btn
+        to="/products"
         color="primary"
         label="Our Quality Products"
         flat
