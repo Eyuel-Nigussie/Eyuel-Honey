@@ -133,7 +133,7 @@
     <!-- ==================================== -->
 
     <div>
-      <p class="invisible">Lorem ipsum dolor sit amet.</p>
+      <p class="invisible">Lorem ipsum dolor sit amet</p>
     </div>
     <footer class="bg-white sm:p-6 dark:bg-gray-900">
       <img src="../assets/honey-dripping.png" class="w-full no-margin" />
