@@ -59,6 +59,13 @@
         <p class="q-ml-md -mb-[8px] text-h3 text-weight-bolder text-amber-9">
           Honey
         </p>
+        <q-btn
+          no-caps
+          push
+          color="primary"
+          label="List BottomSheet"
+          @click="show()"
+        />
       </div>
 
       <div>
@@ -149,7 +156,8 @@
             >
           </a>
         </div>
-        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 p-4">
+
+        <div class="grid grid-cols-2 gap-6 sm:gap-6 sm:grid-cols-3 p-4">
           <div>
             <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">
               Resources
@@ -181,11 +189,24 @@
               </li>
             </ul>
           </div>
+          <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">
+              Official Partner
+            </h2>
+            <div class="flex row">
+              <img src="../assets/killer.png" alt="" width="70" />
+              <q-btn flat color="primary" class="-ml-[10px]">
+                KILLER HONEY
+              </q-btn>
+            </div>
+          </div>
         </div>
       </div>
+
       <hr
-        class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 p-4"
+        class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-5 p-4"
       />
+
       <div class="sm:flex sm:items-center sm:justify-between p-4">
         <span class="text-sm text-primary sm:text-center dark:text-gray-400"
           >© 2023 Eyuel Honey™. <br />
@@ -275,6 +296,7 @@
 </template>
 
 <script scoped>
+import { useQuasar } from "quasar";
 import { ref } from "vue";
 import FloatButton from "../components/floatButton.vue";
 
