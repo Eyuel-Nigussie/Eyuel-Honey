@@ -11,7 +11,11 @@
       class="q-mt-sm rounded-borders no-paddings q-mx-auto justify-center"
     >
       <!-- <div class="absolute-bottom text-subtitle1 text-right"> -->
-      <q-btn round color="primary transparent" icon=""
+      <q-btn
+        round
+        color="amber-8
+ transparent"
+        icon=""
         ><q-img clickable src="~assets/small-bee.png" />
       </q-btn>
       <!-- </div> -->
@@ -21,8 +25,8 @@
         <p class="my-font self-center text-h2 q-mx-md">
           H<span class="text-amber-8">o</span>ney, y<span class="text-amber-8"
             >o</span
-          >ur s<span class="text-amber-9">o</span>ul is g<span
-            class="text-amber-9"
+          >ur s<span class="text-amber-8">o</span>ul is g<span
+            class="text-amber-8"
             >o</span
           >lden.
         </p>
@@ -30,7 +34,8 @@
       <!-- <a href="tel:+251944367283">
         <div>
           <q-page-sticky position="bottom-right" :offset="[18, 18]">
-            <q-btn fab icon="call" color="primary" />
+            <q-btn fab icon="call" color="amber-8
+" />
           </q-page-sticky>
         </div>
       </a> -->
@@ -42,13 +47,13 @@
           to="/products"
           outline
           rounded
-          color="primary"
+          color="amber-8
+"
           class="q-mx-auto"
           label="PRODUCTS"
           size="20px"
         />
       </div>
-
       <div><q-separator color="orange" spaced="16px" inset /></div>
     </div>
     <!-- ============ End First Section ====================== -->
@@ -56,16 +61,9 @@
     <div class="flex flex-col">
       <div class="row q-mb-md">
         <q-img src="~assets/products.png" class="q-ml-md" width="2em" />
-        <p class="q-ml-md -mb-[8px] text-h3 text-weight-bolder text-amber-9">
+        <p class="q-ml-md -mb-[8px] text-h3 text-weight-bolder text-yellow-8">
           Honey
         </p>
-        <q-btn
-          no-caps
-          push
-          color="primary"
-          label="List BottomSheet"
-          @click="show()"
-        />
       </div>
 
       <div>
@@ -99,7 +97,8 @@
 
       <div class="-mt-[20px]">
         <q-btn
-          color="primary"
+          color="amber-8
+"
           icon-left="hive"
           label="Learn About Honey"
           class="q-mt-md"
@@ -132,7 +131,7 @@
       </q-carousel>
       <q-btn
         to="/products"
-        color="primary"
+        color="amber-8"
         label="Our Quality Products"
         flat
         class="mt-[5px]"
@@ -195,7 +194,12 @@
             </h2>
             <div class="flex row">
               <img src="../assets/killer.png" alt="" width="70" />
-              <q-btn flat color="primary" class="-ml-[8px]">
+              <q-btn
+                flat
+                color="amber-8
+"
+                class="-ml-[8px]"
+              >
                 KILLER HONEY
               </q-btn>
             </div>
@@ -208,15 +212,16 @@
       />
 
       <div class="sm:flex sm:items-center sm:justify-between p-4">
-        <span class="text-sm text-primary sm:text-center dark:text-gray-400"
+        <span class="text-sm text-amber-8 sm:text-center dark:text-gray-400"
           >© 2023 Eyuel Honey™. <br />
           All Rights Reserved || Eyu'el Nigussie.
         </span>
         <div
-          class="text-primary flex mt-4 space-x-6 sm:justify-center sm:mt-0"
-          color="primary"
+          class="text-amber-8 flex mt-4 space-x-6 sm:justify-center sm:mt-0"
+          color="amber-8
+"
         >
-          <a href="#" class="text-primary hover:text-amber-400 -900">
+          <a href="#" class="text-amber-8 hover:text-amber-400 -900">
             <svg
               class="w-5 h-5"
               fill="currentColor"
@@ -231,7 +236,7 @@
             </svg>
             <span class="sr-only">Facebook page</span>
           </a>
-          <a href="#" class="text-primary hover:text-amber-400">
+          <a href="#" class="text-amber-8 hover:text-amber-400">
             <svg
               class="w-5 h-5"
               fill="currentColor"
@@ -246,7 +251,7 @@
             </svg>
             <span class="sr-only">Instagram page</span>
           </a>
-          <a href="#" class="text-primary hover:text-amber-400">
+          <a href="#" class="text-amber-8 hover:text-amber-400">
             <svg
               class="w-5 h-5"
               fill="currentColor"
@@ -259,7 +264,7 @@
             </svg>
             <span class="sr-only">Twitter page</span>
           </a>
-          <a href="#" class="text-primary hover:text-amber-400">
+          <a href="#" class="text-amber-8 hover:text-amber-400">
             <svg
               class="w-5 h-5"
               fill="currentColor"
@@ -274,7 +279,7 @@
             </svg>
             <span class="sr-only">GitHub account</span>
           </a>
-          <a href="#" class="text-primary hover:text-amber-400">
+          <a href="#" class="text-amber-8 hover:text-amber-400">
             <svg
               class="w-5 h-5"
               fill="currentColor"

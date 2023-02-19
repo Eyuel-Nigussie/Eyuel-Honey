@@ -36,9 +36,9 @@
         @click="productStore.likes(product.id)"
       />
 
-      <div color="primary">{{ product.likes }}</div>
+      <div color="amber-8">{{ product.likes }}</div>
       <div class="q-ml-md">Price</div>
-      <q-btn flat color="primary"> {{ product.price }}</q-btn>
+      <q-btn flat color="amber-8"> {{ product.price }}</q-btn>
     </q-card-actions>
   </q-card>
 </template>

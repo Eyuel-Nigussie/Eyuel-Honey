@@ -45,7 +45,6 @@ module.exports = configure(function (/* ctx */) {
       "roboto-font", // optional, you are not bound to it
       "material-icons", // optional, you are not bound to it
     ],
-
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#build
     build: {
       target: {
@@ -76,13 +75,11 @@ module.exports = configure(function (/* ctx */) {
       //   [ 'package-name', { ..options.. } ]
       // ]
     },
-
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#devServer
     devServer: {
       // https: true
       open: true, // opens browser window automatically
     },
-
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#framework
     framework: {
       config: {
@@ -91,7 +88,6 @@ module.exports = configure(function (/* ctx */) {
           // ...
         },
       },
-
       // iconSet: 'material-icons', // Quasar icon set
       // lang: 'en-US', // Quasar language pack
 
@@ -105,7 +101,6 @@ module.exports = configure(function (/* ctx */) {
       // Quasar plugins
       plugins: [],
     },
-
     // animations: 'all', // --- includes all animations
     // https://v2.quasar.dev/options/animations
     animations: [],
@@ -205,6 +200,9 @@ module.exports = configure(function (/* ctx */) {
     bin: {
       linuxAndroidStudio:
         "/snap/android-studio/current/android-studio/bin/studio.sh",
+    },
+    framework: {
+      plugins: ["BottomSheet"],
     },
   };
 });

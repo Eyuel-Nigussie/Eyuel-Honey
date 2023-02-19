@@ -24,7 +24,7 @@
             <q-btn flat round icon="event" />
             <q-btn flat> 5:30PM </q-btn>
             <q-btn flat> 7:00PM </q-btn>
-            <q-btn flat color="primary"> Reserve </q-btn>
+            <q-btn flat color="amber-8"> Reserve </q-btn>
           </q-card-actions> -->
       </q-card>
       <q-input outlined v-model="text" label="Full Name" class="q-ma-md" />
@@ -78,14 +78,14 @@
       <q-btn
         to="/confirm"
         push
-        color="primary"
+        color="amber-8"
         label="Buy"
         class="q-m-md m-[8px]"
       />
       <q-btn
         @click="onReset()"
         push
-        color="primary"
+        color="amber-8"
         label="Reset"
         class="q-m-md m-[8px]"
       />

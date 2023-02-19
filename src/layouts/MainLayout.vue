@@ -54,64 +54,13 @@
           class="gt-xs"
         />
 
-        <q-route-tab name="/map" icon="share" label="" class="q-pa-none lt-sm">
-          <q-menu
-            fit
-            elevated
-            anchor="top middle"
-            self="bottom middle"
-            icon="share"
-            class="text-weight-bolder popup"
-          >
-            <q-item clickable class="text-weight-bolder">
-              <q-item-section clickable class="flex flex-row no-wrap">
-                <div>WhatsApp</div>
-                <div>
-                  <q-icon
-                    name="call"
-                    color="green-6"
-                    class="ml-5"
-                    size="20px"
-                  />
-                </div>
-              </q-item-section>
-            </q-item>
-
-            <q-item clickable>
-              <q-item-section clickable class="flex flex-row no-wrap">
-                <div>Telegram</div>
-                <div>
-                  <q-icon name="send" color="blue" class="ml-5" size="20px" />
-                </div>
-              </q-item-section>
-            </q-item>
-
-            <q-item clickable>
-              <q-item-section clickable class="flex flex-row no-wrap">
-                <div>Facebook</div>
-                <div>
-                  <q-icon
-                    name="facebook"
-                    color="blue"
-                    class="ml-5"
-                    size="20px"
-                  />
-                </div>
-              </q-item-section>
-            </q-item>
-
-            <q-item clickable>
-              <q-item-section class="flex flex-row no-wrap">
-                <div>
-                  Copy Link<q-icon
-                    name="content_copy"
-                    class="ml-5"
-                    size="20px"
-                  />
-                </div>
-              </q-item-section>
-            </q-item>
-          </q-menu>
+        <q-route-tab
+          name=""
+          icon="share"
+          label=""
+          class="q-pa-none lt-sm"
+          @click="show()"
+        >
         </q-route-tab>
 
         <!-- share large screen -->
@@ -148,7 +97,7 @@
       >
         <q-list>
           <template v-for="(menuItem, index) in menuList" :key="index">
-            <q-item clickable :active="menuItem.label === 'Outbox'" v-ripple>
+            <q-item clickable :active="menuItem.label === ''" v-ripple>
               <q-item-section avatar>
                 <q-icon :name="menuItem.icon" />
               </q-item-section>
@@ -186,17 +135,17 @@ import { useQuasar } from "quasar";
 const menuList = [
   {
     icon: "inbox",
-    label: "Inbox",
+    label: "Products",
     separator: true,
   },
   {
     icon: "send",
-    label: "Outbox",
+    label: "Waiting",
     separator: false,
   },
   {
     icon: "delete",
-    label: "Trash",
+    label: "Orders",
     separator: false,
   },
   {
@@ -216,7 +165,7 @@ const menuList = [
   },
   {
     icon: "help",
-    iconColor: "primary",
+    iconColor: "amber-8",
     label: "Help",
     separator: false,
   },
@@ -230,7 +179,7 @@ export default defineComponent({
 
     function show(grid) {
       $q.bottomSheet({
-        message: "Bottom Sheet message",
+        message: "Share",
         grid,
         actions: [
           {
@@ -255,19 +204,14 @@ export default defineComponent({
           },
           {},
           {
-            label: "Share",
-            icon: "share",
-            id: "share",
-          },
-          {
             label: "Upload",
             icon: "cloud_upload",
-            color: "primary",
+            color: "amber-8",
             id: "upload",
           },
           {},
           {
-            label: "John",
+            label: "Eyuel Nigussie",
             avatar: "https://cdn.quasar.dev/img/boy-avatar.png",
             id: "john",
           },
@@ -283,6 +227,7 @@ export default defineComponent({
           // console.log('I am triggered on both OK and Cancel')
         });
     }
+
     return {
       drawer: ref(true),
       menuList,
