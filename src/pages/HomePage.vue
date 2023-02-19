@@ -195,7 +195,7 @@
             </h2>
             <div class="flex row">
               <img src="../assets/killer.png" alt="" width="70" />
-              <q-btn flat color="primary" class="-ml-[10px]">
+              <q-btn flat color="primary" class="-ml-[8px]">
                 KILLER HONEY
               </q-btn>
             </div>

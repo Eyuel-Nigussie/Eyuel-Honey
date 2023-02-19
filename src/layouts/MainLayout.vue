@@ -62,7 +62,6 @@
             self="bottom middle"
             icon="share"
             class="text-weight-bolder popup"
-            @click="show()"
           >
             <q-item clickable class="text-weight-bolder">
               <q-item-section clickable class="flex flex-row no-wrap">
@@ -127,13 +126,7 @@
           </q-menu>
         </q-route-tab>
 
-        <q-route-tab
-          name=""
-          icon="menu"
-          label=""
-          class="q-pa-none lt-sm"
-          @click="drawerLeft = !drawerLeft"
-        />
+        <q-btn flat @click="drawer = !drawer" round dense icon="menu" />
         <!--Larger screen-->
         <q-route-tab to="/map" name="" icon="menu" label="Menu" class="gt-xs" />
       </q-tabs>
@@ -142,18 +135,40 @@
     <!-- ========================== Drawer End here ======================== -->
 
     <q-drawer
-      v-model="drawerLeft"
-      show-if-above
+      v-model="drawer"
       :width="200"
-      :breakpoint="300"
+      :breakpoint="100"
       overlay
       elevated
-      class="backdrop-blur-sm sidebar"
+      bordered
+      class="bg-grey-3 bg-transparent"
     >
-      <q-scroll-area class="fit sidebar">
-        <div class="q-pa-sm sidebar">
-          <div v-for="n in 20" :key="n">Drawer {{ n }} / 50</div>
-        </div>
+      <q-scroll-area
+        class="fit bg-gradient-to-r from-yellow-100 via-yellow-300 to-yellow-500"
+      >
+        <q-list>
+          <template v-for="(menuItem, index) in menuList" :key="index">
+            <q-item clickable :active="menuItem.label === 'Outbox'" v-ripple>
+              <q-item-section avatar>
+                <q-icon :name="menuItem.icon" />
+              </q-item-section>
+              <q-item-section>
+                {{ menuItem.label }}
+              </q-item-section>
+            </q-item>
+            <q-separator :key="'sep' + index" v-if="menuItem.separator" />
+          </template>
+
+          <div class="mt-[200px]">
+            <q-avatar size="56px" class="q-mb-sm q-ml-xl">
+              <img src="https://cdn.quasar.dev/img/boy-avatar.png" class="" />
+            </q-avatar>
+            <div class="text-weight-bold">Eyu'el Nigussie</div>
+            <div>@eyuthedev</div>
+          </div>
+
+          <div class="min-h-[3000px] drawer"></div>
+        </q-list>
       </q-scroll-area>
     </q-drawer>
 
@@ -167,6 +182,45 @@
 <script>
 import { defineComponent, ref } from "vue";
 import { useQuasar } from "quasar";
+
+const menuList = [
+  {
+    icon: "inbox",
+    label: "Inbox",
+    separator: true,
+  },
+  {
+    icon: "send",
+    label: "Outbox",
+    separator: false,
+  },
+  {
+    icon: "delete",
+    label: "Trash",
+    separator: false,
+  },
+  {
+    icon: "error",
+    label: "Spam",
+    separator: true,
+  },
+  {
+    icon: "settings",
+    label: "Settings",
+    separator: false,
+  },
+  {
+    icon: "feedback",
+    label: "Send Feedback",
+    separator: false,
+  },
+  {
+    icon: "help",
+    iconColor: "primary",
+    label: "Help",
+    separator: false,
+  },
+];
 
 export default defineComponent({
   name: "MainLayout",
@@ -230,7 +284,8 @@ export default defineComponent({
         });
     }
     return {
-      drawerLeft: ref(false),
+      drawer: ref(true),
+      menuList,
       show,
     };
   },
@@ -258,7 +313,14 @@ export default defineComponent({
 }
 
 .popup {
-  /* opacity: 0.5; */
+  font-weight: bolder;
+  font-size: large;
   background: rgba(255, 251, 240, 0.8);
+}
+
+/* for the remaining position of the drawer */
+.drawer {
+  background: url("../assets/drawer.png");
+  background-position: right;
 }
 </style>
