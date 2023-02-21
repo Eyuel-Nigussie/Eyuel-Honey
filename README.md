@@ -1,5 +1,7 @@
 # eyuel honey (eyuel-honey)
 
+This is one of my porfolio project showcase
+
 A Honey shop
 
 ## Install the dependencies
