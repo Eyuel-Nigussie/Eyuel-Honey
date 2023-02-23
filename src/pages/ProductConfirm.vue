@@ -29,7 +29,7 @@
     >
       <div>
         <p class="mx-auto font-bold text-[20px] text-center">
-          Tell your friends family and loved once about our greate life choice:
+          Tell your friends family and loved once about your greate life choice:
         </p>
       </div>
       <div class="flex flex-row mx-auto space-x-4">
