@@ -1,26 +1,22 @@
 <template>
-  <q-page class="flex justify-evenly space-y-8">
-    <q-parallax
-      src="https://www.beekeepingfornewbies.com/wp-content/uploads/2019/09/Honey-and-Honeycomb.jpg"
-      :height="100"
-    />
+  <q-page class="flex justify-evenly space-y-9">
+    <!-- =======================------ First Section ------================================ -->
     <q-img
       src="~assets/honey-main.png"
       spinner-color="brown"
-      style="width: 20rem; height: 17rem"
-      class="q-mt-sm rounded-borders no-paddings q-mx-auto justify-center"
+      style="width: 60%; height: auto"
+      class="main-honey q-mt-sm rounded-borders no-paddings q-mx-auto justify-center"
     >
-      <!-- <div class="absolute-bottom text-subtitle1 text-right"> -->
-      <q-btn
-        round
-        color="amber-8
- transparent"
-        icon=""
-        ><q-img clickable src="~assets/small-bee.png" />
+      <q-btn round color="amber-8 transparent" class="-">
+        <q-img
+          clickable
+          src="~assets/small-bee.png"
+          class="ma-md bucket-bee bounce"
+        />
       </q-btn>
-      <!-- </div> -->
     </q-img>
-    <div class="flex column text-center content-around space-y-5">
+
+    <div class="flex column text-center content-around space-y-9">
       <div>
         <p class="my-font self-center text-h2 q-mx-md">
           H<span class="text-amber-8">o</span>ney, y<span class="text-amber-8"
@@ -31,16 +27,6 @@
           >lden.
         </p>
       </div>
-      <!-- <a href="tel:+251944367283">
-        <div>
-          <q-page-sticky position="bottom-right" :offset="[18, 18]">
-            <q-btn fab icon="call" color="amber-8
-" />
-          </q-page-sticky>
-        </div>
-      </a> -->
-
-      <FloatButton />
 
       <div>
         <q-btn
@@ -49,14 +35,29 @@
           rounded
           color="amber-8
 "
-          class="q-mx-auto"
+          class="q-mx-auto q-my-xl"
           label="PRODUCTS"
           size="20px"
         />
       </div>
-      <div><q-separator color="orange" spaced="16px" inset /></div>
+      <img
+        src="../assets/bee-1.png"
+        width="50"
+        class="absolute bottom-30 right-0 movement"
+      />
+      <img
+        src="../assets/bee-2.png"
+        width="30"
+        class="absolute bottom-30 left-0 movement-2"
+      />
+      <img src="../assets/small-bee.png" width="10" class="absolute top-2/3" />
+
+      <div><q-separator color="orange" spaced="20px" inset /></div>
     </div>
+
     <!-- ============ End First Section ====================== -->
+
+    <!-- ================------ About Honey  section -----======================== -->
 
     <div class="flex flex-col">
       <div class="row q-mb-md">
@@ -79,46 +80,134 @@
             >
               <source
                 type="video/webm"
-                src="https://assets.mixkit.co/videos/preview/mixkit-honey-dipper-with-honey-2802-large.mp4"
+                src="https://thumbs.gfycat.com/AptUnsteadyHatchetfish-mobile.mp4"
               />
               <source
                 type="video/mp4"
-                src="hhttps://assets.mixkit.co/videos/preview/mixkit-honey-dipper-with-honey-2802-large.mp4"
+                src="https://thumbs.gfycat.com/AptUnsteadyHatchetfish-mobile.mp4"
               />
             </video>
           </template>
         </q-parallax>
 
         <p class="self-center text-h6 q-mx-md text-weight-bolder">
-          Is a one-ingredient recipe made by bees, flowers and mother nature
-          herself.
+          Honey is a one-ingredient recipe made by bees, flowers and mother
+          nature herself.
+        </p>
+        <p class="bg-white q-mx-md">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo repellat
+          consequatur reiciendis sequi, quae illum! Maiores deleniti, dolorum
+          quibusdam quaerat rem omnis in veniam aliquid dolores illum quasi
+          distinctio nesciunt.
         </p>
       </div>
 
       <div class="-mt-[20px]">
         <q-btn
-          color="amber-8
-"
+          color="amber-8"
           icon-left="hive"
           label="Learn About Honey"
           class="q-mt-md"
           flat
         />
       </div>
-
       <div><q-separator color="orange" spaced="16px" inset /></div>
     </div>
-    <q-separator color="orange" spaced="5px" inset />
 
+    <q-separator color="orange" spaced="5px" inset />
+    <!-- ================------ End About Honey  section -----======================== -->
+
+    <!-- ================------ News  section -----======================== -->
+
+    <div class="flex flex-col">
+      <div class="row q-mb-md">
+        <q-img src="~assets/products.png" class="q-ml-md" width="2em" />
+        <p class="q-mx-md -mb-[8px] text-h3 text-weight-bolder text-yellow-8">
+          News
+        </p>
+        <div class="bg-white q-mx-md q-ml-md">
+          <div class="q-pa-md">
+            <span class="text-orange-10 q-mt-md">JANUARY 27, 2023</span>
+            <h2
+              class="text-h5 text-weight-bolder text-black hover:text-orange-9"
+            >
+              10 Benfits of Honey
+            </h2>
+            <p>
+              Honey is a natural sweetener and has many health benefits. It is
+              high in antioxidants, which help to protect the body from free
+              radicals. It also contains vitamins A, B, C, and E, as well as
+              minerals like potassium, calcium, magnesium, and zinc. Fir honey
+              can be used to treat a variety of illnesses and conditions. It is
+              a natural cough suppressor and helps to boost the immune system.
+              Finally, it is known for its anti-inflammatory and antibacterial
+              properties, which makes it ideal for treating sore throats or
+              respiratory problems. If you are looking for delicious and healthy
+              honey, look no further than Fir Honey!
+            </p>
+          </div>
+          <div class="q-pa-md">
+            <span class="text-orange-10 q-mt-md">JANUARY 27, 2023</span>
+            <h2
+              class="text-h5 text-weight-bolder text-black hover:text-orange-9"
+            >
+              10 Benfits of Honey
+            </h2>
+            <p>
+              Honey is a natural sweetener and has many health benefits. It is
+              high in antioxidants, which help to protect the body from free
+              radicals. It also contains vitamins A, B, C, and E, as well as
+              minerals like potassium, calcium, magnesium, and zinc. Fir honey
+              can be used to treat a variety of illnesses and conditions. It is
+              a natural cough suppressor and helps to boost the immune system.
+              Finally, it is known for its anti-inflammatory and antibacterial
+              properties, which makes it ideal for treating sore throats or
+              respiratory problems. If you are looking for delicious and healthy
+              honey, look no further than Fir Honey!
+            </p>
+          </div>
+          <div class="q-pa-md">
+            <span class="text-orange-10 q-mt-md">JANUARY 27, 2023</span>
+            <h2
+              class="text-h5 text-weight-bolder text-black hover:text-orange-9"
+            >
+              10 Benfits of Honey
+            </h2>
+            <p>
+              Honey is a natural sweetener and has many health benefits. It is
+              high in antioxidants, which help to protect the body from free
+              radicals. It also contains vitamins A, B, C, and E, as well as
+              minerals like potassium, calcium, magnesium, and zinc. Fir honey
+              can be used to treat a variety of illnesses and conditions. It is
+              a natural cough suppressor and helps to boost the immune system.
+              Finally, it is known for its anti-inflammatory and antibacterial
+              properties, which makes it ideal for treating sore throats or
+              respiratory problems. If you are looking for delicious and healthy
+              honey, look no further than Fir Honey!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <q-separator color="orange" spaced="5px" inset />
+    <!-- ================------ End News  section -----======================== -->
+
+    <!-- ================------ slider section -----======================== -->
     <div class="w-full">
+      <div class="flex row">
+        <q-img src="~assets/products.png" class="q-ml-md" width="2em" />
+        <p class="q-mx-md -mb-[8px] text-h3 text-weight-bolder text-yellow-8">
+          PRODUCTS
+        </p>
+      </div>
       <q-carousel animated v-model="slide" arrows navigation infinite>
         <q-carousel-slide
           :name="1"
-          img-src="https://cdn7.dissolve.com/p/D1062_38_175/D1062_38_175_1200.jpg"
+          img-src="https://static.wixstatic.com/media/12fd37_e9fcb515c514406daf1cac01c85e412b~mv2.jpeg/v1/fill/w_640,h_588,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/12fd37_e9fcb515c514406daf1cac01c85e412b~mv2.jpeg"
         />
         <q-carousel-slide
           :name="2"
-          img-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd0jnpcOYs5uVWogKPnHSOghifZ0bjwfyO0Mf--ZljZzKo-_8D99-atEnUQ-yd-qhas4s&usqp=CAU"
+          img-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8woDk3fXQx_L0y8LBhOdkremTTpvS5NdDkQ&usqp=CAU"
         />
         <q-carousel-slide
           :name="3"
@@ -137,8 +226,9 @@
         class="mt-[5px]"
       />
     </div>
+    <!-- ================------ Ende slider section -----======================== -->
 
-    <!-- ==================================== -->
+    <!-- ===============---- Footer  -----================== -->
 
     <div>
       <p class="invisible">Lorem ipsum dolor sit amet</p>
@@ -296,6 +386,7 @@
           </a>
         </div>
       </div>
+      <FloatButton />
     </footer>
   </q-page>
 </template>
@@ -322,3 +413,77 @@ export default {
 </style>
 <!-- app id -->
 <!-- com.eyuel.honey.app -->
+<style>
+.bucket-bee {
+}
+.bounce {
+  animation-name: bounce-1;
+  animation-timing-function: ease-out;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+@keyframes bounce-1 {
+  0% {
+    transform: translateX(50px);
+  }
+  25% {
+    transform: translateX(10px);
+  }
+
+  50% {
+    transform: translateX(20px);
+  }
+
+  100% {
+    transform: translateX(50px);
+  }
+}
+
+.movement {
+  animation: fly-around 4s linear infinite;
+}
+
+@keyframes fly-around {
+  0% {
+    transform: rotate(0deg) translateX(-30px) rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg) translateX(20px) rotate(-360deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(-30px) rotate(-360deg);
+  }
+}
+
+.movement-2 {
+  animation: fly-around-2 4s linear infinite;
+}
+
+@keyframes fly-around-2 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.main-honey {
+  animation: main-honey 4s linear infinite;
+}
+
+@keyframes main-honey {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+</style>
