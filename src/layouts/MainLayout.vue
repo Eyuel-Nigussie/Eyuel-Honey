@@ -1,9 +1,9 @@
 <template>
-  <q-layout view="hHr lpR fFf" class="background">
+  <q-layout view="hHr lpR fFf" class="bg-defination">
     <q-header
       reveal
       overlay
-      class="text-black flex row justify-between q-pa-none no-wrap q-ma-none q-mb-md ellipsis transparent"
+      class="text-black flex row justify-between q-pa-none no-wrap q-ma-none q-mb-md ellipsis transparent z-50"
       height-hint="40"
     >
       <q-toolbar>
@@ -27,7 +27,7 @@
         </q-toolbar-title>
       </q-toolbar>
 
-      <q-tabs class="left q-ma-none">
+      <q-tabs class="left q-ma-none background-tab z-50">
         <q-route-tab
           to="/"
           name="/"
@@ -238,18 +238,45 @@ export default defineComponent({
 </script>
 
 <style>
+.bg-defination {
+  animation: change-bg 100s linear infinite;
+}
+@keyframes change-bg {
+  0% {
+    background-image: url("../assets/background-one.jpg");
+    background-size: cover;
+  }
+  25% {
+    background-image: url("../assets/background-two.jpg");
+    background-size: cover;
+  }
+  45% {
+    background-image: url("../assets/background-three.jpg");
+    background-size: cover;
+  }
+  65% {
+    background-image: url("../assets/background-four.jpg");
+    background-size: cover;
+  }
+  70% {
+    background-image: url("../assets/background-five.jpg");
+    background-size: cover;
+  }
+  100% {
+    background-image: url("../assets/background-six.jpg");
+    background-size: cover;
+  }
+}
+
 .sidebar {
   background: rgba(255, 251, 240, 0.4);
 }
 
-.background {
-  /* background-image: url("src/assets/drawer.png");
-  background-position: right 100% bottom -70%; */
-  background: rgb(36, 33, 0);
+.background-tab {
   background: linear-gradient(
     90deg,
-    rgba(36, 33, 0, 0) 70%,
-    rgba(241, 185, 14, 0.3) 100%
+    rgba(36, 33, 0, 0) 30%,
+    rgba(241, 184, 14, 0.405) 100%
   );
   background-attachment: scroll;
   background-repeat: no-repeat;
