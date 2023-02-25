@@ -1,58 +1,64 @@
 <template>
   <q-page class="flex justify-evenly space-y-9">
     <!-- =======================------ First Section ------================================ -->
-    <q-img
-      src="~assets/honey-main.png"
-      spinner-color="brown"
-      style="width: 60%; height: auto"
-      class="main-honey q-mt-sm rounded-borders no-paddings q-mx-auto justify-center"
-    >
-      <q-btn round color="amber-8 transparent" class="-">
-        <q-img
-          clickable
-          src="~assets/small-bee.png"
-          class="ma-md bucket-bee bounce"
-        />
-      </q-btn>
-    </q-img>
+    <div class="flex justify-evenly">
+      <q-img
+        src="~assets/honey-fairy.png"
+        spinner-color="brown"
+        style="width: 40%; height: auto"
+        class="main-honey q-mt-sm rounded-borders no-paddings q-mx-auto justify-center"
+      >
+        <q-btn round color="amber-8 transparent" class="-">
+          <q-img
+            clickable
+            src="~assets/small-bee.png"
+            class="ma-md bucket-bee bounce"
+          />
+        </q-btn>
+      </q-img>
 
-    <div class="flex column text-center content-around space-y-9">
-      <div>
-        <p class="my-font self-center text-h2 q-mx-md">
-          H<span class="text-amber-8">o</span>ney, y<span class="text-amber-8"
-            >o</span
-          >ur s<span class="text-amber-8">o</span>ul is g<span
-            class="text-amber-8"
-            >o</span
-          >lden.
-        </p>
-      </div>
+      <div class="flex column text-center content-around space-y-9">
+        <div>
+          <p class="my-font self-center text-h2 q-mx-md">
+            H<span class="text-amber-8">o</span>ney, y<span class="text-amber-8"
+              >o</span
+            >ur s<span class="text-amber-8">o</span>ul is g<span
+              class="text-amber-8"
+              >o</span
+            >lden.
+          </p>
+        </div>
 
-      <div>
-        <q-btn
-          to="/products"
-          outline
-          rounded
-          color="amber-8
+        <div>
+          <q-btn
+            to="/products"
+            outline
+            rounded
+            color="amber-8
 "
-          class="q-mx-auto q-my-xl"
-          label="PRODUCTS"
-          size="20px"
+            class="q-mx-auto q-my-xl"
+            label="PRODUCTS"
+            size="20px"
+          />
+        </div>
+        <img
+          src="../assets/bee-1.png"
+          width="50"
+          class="absolute bottom-30 right-0 movement"
         />
-      </div>
-      <img
-        src="../assets/bee-1.png"
-        width="50"
-        class="absolute bottom-30 right-0 movement"
-      />
-      <img
-        src="../assets/bee-2.png"
-        width="30"
-        class="absolute bottom-30 left-0 movement-2"
-      />
-      <img src="../assets/small-bee.png" width="10" class="absolute top-2/3" />
+        <img
+          src="../assets/bee-2.png"
+          width="30"
+          class="absolute bottom-30 left-0 movement-2"
+        />
+        <img
+          src="../assets/small-bee.png"
+          width="10"
+          class="absolute top-2/3"
+        />
 
-      <div><q-separator color="orange" spaced="20px" inset /></div>
+        <div><q-separator color="orange" spaced="20px" inset /></div>
+      </div>
     </div>
 
     <!-- ============ End First Section ====================== -->
@@ -94,11 +100,28 @@
           Honey is a one-ingredient recipe made by bees, flowers and mother
           nature herself.
         </p>
-        <p class="bg-white q-mx-md">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo repellat
-          consequatur reiciendis sequi, quae illum! Maiores deleniti, dolorum
-          quibusdam quaerat rem omnis in veniam aliquid dolores illum quasi
-          distinctio nesciunt.
+        <p class="bg-white q-mx-md q-pa-md">
+          Whether you're a brother or whether you're a mother You're stayin'
+          alive, stayin' alive Feel the city breakin' and everybody shakin' And
+          we're stayin' alive, stayin' alive Ah, ha, ha, ha, stayin' alive,
+          stayin' alive Ah, ha, ha, ha, stayin' alive (hey) Life goin' nowhere,
+          somebody help me Somebody help me, yeah Life goin' nowhere, somebody
+          help me, yeah I'm stayin' alive
+        </p>
+        <h2
+          class="text-h6 text-weight-bolder q-mx-md q-mt-md text-black for-hover"
+        >
+          10 Benfits of Honey
+        </h2>
+        <p class="bg-white q-mx-md q-pa-md">
+          Well, you can tell by the way I use my walk I'm a woman's man, no time
+          to talk Music loud and women warm, I've been kicked around Since I was
+          born And now it's alright, it's okay And you may look the other way We
+          can try to understand The New York Times' effect on man Whether you're
+          a brother or whether you're a mother You're stayin' alive, stayin'
+          alive Feel the city breakin' and everybody shakin' And we're stayin'
+          alive, stayin' alive Ah, ha, ha, ha, stayin' alive, stayin' alive Ah,
+          ha, ha, ha, stayin' alive Oh, when you walk
         </p>
       </div>
 
@@ -121,15 +144,17 @@
 
     <div class="flex flex-col">
       <div class="row q-mb-md">
-        <q-img src="~assets/products.png" class="q-ml-md" width="2em" />
-        <p class="q-mx-md -mb-[8px] text-h3 text-weight-bolder text-yellow-8">
-          News
-        </p>
+        <div class="row q-mb-md">
+          <q-img src="~assets/products.png" class="q-ml-md" width="2em" />
+          <p class="q-mx-md -mb-[8px] text-h3 text-weight-bolder text-yellow-8">
+            News
+          </p>
+        </div>
         <div class="bg-white q-mx-md q-ml-md">
           <div class="q-pa-md">
             <span class="text-orange-10 q-mt-md">JANUARY 27, 2023</span>
             <h2
-              class="text-h5 text-weight-bolder text-black hover:text-orange-9"
+              class="text-h5 text-weight-bolder text-black hover:text-orange-9 for-hover"
             >
               10 Benfits of Honey
             </h2>
@@ -148,9 +173,7 @@
           </div>
           <div class="q-pa-md">
             <span class="text-orange-10 q-mt-md">JANUARY 27, 2023</span>
-            <h2
-              class="text-h5 text-weight-bolder text-black hover:text-orange-9"
-            >
+            <h2 class="text-h5 text-weight-bolder text-black for-hover">
               10 Benfits of Honey
             </h2>
             <p>
@@ -168,9 +191,7 @@
           </div>
           <div class="q-pa-md">
             <span class="text-orange-10 q-mt-md">JANUARY 27, 2023</span>
-            <h2
-              class="text-h5 text-weight-bolder text-black hover:text-orange-9"
-            >
+            <h2 class="text-h5 text-weight-bolder text-black for-hover">
               10 Benfits of Honey
             </h2>
             <p>
@@ -194,7 +215,7 @@
 
     <!-- ================------ slider section -----======================== -->
     <div class="w-full">
-      <div class="flex row">
+      <div class="flex row q-mb-md">
         <q-img src="~assets/products.png" class="q-ml-md" width="2em" />
         <p class="q-mx-md -mb-[8px] text-h3 text-weight-bolder text-yellow-8">
           PRODUCTS
@@ -405,15 +426,14 @@ export default {
   },
 };
 </script>
-
-<style lang="sass" scoped>
-.my-card
-  width: 100%
-  max-width: 500px
-</style>
 <!-- app id -->
 <!-- com.eyuel.honey.app -->
-<style>
+<style scoped>
+.my-card {
+  width: 100%;
+  max-width: 500px;
+}
+
 .bucket-bee {
 }
 .bounce {
@@ -448,7 +468,7 @@ export default {
     transform: rotate(0deg) translateX(-30px) rotate(0deg);
   }
   50% {
-    transform: rotate(360deg) translateX(20px) rotate(-360deg);
+    transform: rotate(360deg) translateX(0px) rotate(-360deg);
   }
   100% {
     transform: rotate(360deg) translateX(-30px) rotate(-360deg);
@@ -472,7 +492,7 @@ export default {
 }
 
 .main-honey {
-  animation: main-honey 4s linear infinite;
+  animation: main-honey 6s linear infinite;
 }
 
 @keyframes main-honey {
@@ -480,10 +500,17 @@ export default {
     transform: rotate(0deg);
   }
   50% {
-    transform: rotate(2deg);
+    transform: rotate(4deg);
   }
   100% {
     transform: rotate(0deg);
   }
+}
+
+.for-hover:hover {
+  background: rgba(95, 72, 8, 0.4);
+  color: rgb(167, 239, 255);
+  font-size: 20px;
+  cursor: pointer;
 }
 </style>
