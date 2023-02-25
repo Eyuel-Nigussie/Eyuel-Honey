@@ -1,18 +1,14 @@
 <template>
   <qpage class="flex flex-col mx-auto">
     <div class="mt-[100px] mx-auto">
-      <h1 class="text-[50px] font-bold">Congratulation!</h1>
-      <div class="ml-20">
-        <p class="font-bold text-[20px]">Your order is on it's way</p>
-        <q-icon
-          name="arrow_right_alt"
-          size="200px"
-          class="-ml-[10px] -mt-[60px]"
-        />
+      <h1 class="text-5xl font-bold">Congratulation!</h1>
+      <div class="ml-8">
+        <p class="font-bold text-2xl">Your order is on it's way</p>
+        <q-icon name="arrow_right_alt" size="200px" class="-mt-[60px]" />
       </div>
     </div>
 
-    <div class="q-my-md">
+    <div class="q-my-md w-3/5 mx-auto">
       <div class="loop-wrapper">
         <div class="mountain"></div>
         <div class="hill"></div>
@@ -25,7 +21,7 @@
     </div>
 
     <div
-      class="border-solid border-2 border-slate-900 p-5 mx-10 flex flex-col space-y-20 mb-10"
+      class="border-solid border-2 border-slate-900 p-5 mx-6 flex flex-col space-y-20 mb-10"
     >
       <div>
         <p class="mx-auto font-bold text-[20px] text-center">
