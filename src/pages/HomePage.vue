@@ -2,20 +2,14 @@
   <q-page class="flex justify-evenly space-y-9">
     <!-- =======================------ First Section ------================================ -->
     <div class="flex justify-evenly">
-      <q-img
-        src="~assets/honey-fairy.png"
-        spinner-color="brown"
-        style="width: 40%; height: auto"
-        class="main-honey q-mt-sm rounded-borders no-paddings q-mx-auto justify-center"
-      >
-        <q-btn round color="amber-8 transparent" class="-">
-          <q-img
-            clickable
-            src="~assets/small-bee.png"
-            class="ma-md bucket-bee bounce"
-          />
-        </q-btn>
-      </q-img>
+      <transition appear>
+        <q-img
+          src="~assets/honey-fairy.png"
+          spinner-color="brown"
+          style="width: 40%; height: auto"
+          class="main-honey q-mt-sm rounded-borders no-paddings q-mx-auto justify-center z-12"
+        />
+      </transition>
 
       <div class="flex column text-center content-around space-y-9">
         <div>

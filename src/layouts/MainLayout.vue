@@ -239,11 +239,11 @@ export default defineComponent({
 
 <style>
 .bg-defination {
-  animation: change-bg 100s linear infinite;
+  animation: change-bg 1000s linear infinite;
 }
 @keyframes change-bg {
   0% {
-    background-image: url("../assets/background-one.jpg");
+    background-image: url("../assets/background-three.jpg");
     background-size: cover;
   }
   25% {
@@ -255,7 +255,7 @@ export default defineComponent({
     background-size: cover;
   }
   65% {
-    background-image: url("../assets/background-four.jpg");
+    background-image: url("../assets/background-one.jpg");
     background-size: cover;
   }
   70% {
