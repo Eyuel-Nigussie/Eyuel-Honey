@@ -1,6 +1,5 @@
 # eyuel honey (eyuel-honey)
-
-This is one of my porfolio project showcase
+⚠️ Vistor Beware: This is an abandoned Project. 
 
 A Honey shop
 
